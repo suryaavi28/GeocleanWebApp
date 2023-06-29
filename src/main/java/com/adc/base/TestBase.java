@@ -4,26 +4,33 @@ import java.time.Duration;
 import java.util.Properties;
 
 import com.utilis.ReadConfigUtilities;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-     protected static WebDriver driver;
-    static ReadConfigUtilities configUtils;
 
+     public static WebDriver driver =null;
+    static ReadConfigUtilities configUtils;
+    private static Logger logger = LogManager.getLogger(TestBase.class);
+    
+   
     @BeforeTest
     public static void setUp() {
         configUtils = new ReadConfigUtilities();
         configUtils.readConfig();
-
+        logger.info("this is my fist log");
        
         String browser = configUtils.getProperty("browser");
 

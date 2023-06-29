@@ -15,12 +15,14 @@ public class SearchFunctionalityTest extends TestBase implements ISearchFunction
 	public void testSearchFeildFunctionality() {
 		searchFunctionality = new SearchFunctionality(driver);
 
-		String expectedTitle = "Bing";
-		String actualTitle = searchFunctionality.titleOfPage();
-		
-		System.out.println("Title of the page: " + actualTitle);
-		
-		Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch");
+        // Perform the search
+		searchFunctionality.searchResult("OpenAI");
+		searchFunctionality.clickOnFirstResult();
+		//searchFunctionality.clickOnFirstResult();
+
+        // Verify the search results
+        String pageTitle = driver.getTitle();
+        Assert.assertTrue(pageTitle.contains("openai"), "Search results page title does not contain 'OpenAI'");
 	}
 	
 }

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.tests.SearchFunctionalityTest">
         <methods>
+          <include name="testSearchFeildFunctionality"/>
           <include name="setUp"/>
-          <include name="testSearch"/>
         </methods>
       </class> <!-- com.tests.SearchFunctionalityTest -->
     </classes>

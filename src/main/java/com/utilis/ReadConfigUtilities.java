@@ -11,7 +11,7 @@ public class ReadConfigUtilities {
         properties = new Properties();
 
         try {
-            FileInputStream fileInputStream = new FileInputStream("C:\\Users\\User\\eclipse-workspace\\com.adc\\src\\main\\resources\\config.properties");
+            FileInputStream fileInputStream = new FileInputStream("C:\\Users\\User\\git\\AdaniADC\\src\\main\\resources\\config.properties");
             properties.load(fileInputStream);
             fileInputStream.close();
         } catch (IOException e) {
