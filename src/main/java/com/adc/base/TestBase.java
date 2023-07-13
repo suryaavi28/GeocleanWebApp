@@ -21,16 +21,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
-     public static WebDriver driver =null;
+     public static WebDriver driver;
     static ReadConfigUtilities configUtils;
     private static Logger logger = LogManager.getLogger(TestBase.class);
     
    
-    @BeforeTest
+  
     public static void setUp() {
         configUtils = new ReadConfigUtilities();
         configUtils.readConfig();
-        logger.info("this is my fist log");
+    
        
         String browser = configUtils.getProperty("browser");
 
@@ -54,6 +54,7 @@ public class TestBase {
             System.out.println("Please provide correct browser");
         }
 
+
         String url = configUtils.getProperty("url");
         driver.get(url);
 
@@ -61,8 +62,8 @@ public class TestBase {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(7));
     }
 
-//    @AfterTest
-//    public static void tearDown() {
-//        driver.quit();
-//    }
+    @AfterTest
+    public static void tearDown() {
+        driver.quit();
+    }
 }

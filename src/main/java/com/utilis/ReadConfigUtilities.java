@@ -4,11 +4,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.Logger;
+
 public class ReadConfigUtilities {
     private Properties properties;
 
+    
+
     public void readConfig() {
         properties = new Properties();
+        
 
         try {
             FileInputStream fileInputStream = new FileInputStream("C:\\Users\\User\\git\\AdaniADC\\src\\main\\resources\\config.properties");
