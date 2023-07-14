@@ -1,6 +1,6 @@
 package com.geo.tests;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertArrayEquals;	
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -18,8 +18,8 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-public class MainPageTest extends TestBase {
-	MainPage mp ;
+public class MainPageTest extends TestBase  {
+	 MainPage mp;
 	
 	
 	@BeforeMethod

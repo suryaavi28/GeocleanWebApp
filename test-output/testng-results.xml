@@ -1,29 +1,433 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="2" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T14:47:59 IST" name="Default suite" finished-at="2023-07-13T14:48:26 IST" duration-ms="27258">
+  <suite started-at="2023-07-14T10:46:39 IST" name="Suite" finished-at="2023-07-14T10:48:24 IST" duration-ms="105163">
     <groups>
     </groups>
-    <test started-at="2023-07-13T14:47:59 IST" name="Default test" finished-at="2023-07-13T14:48:26 IST" duration-ms="27258">
+    <test started-at="2023-07-14T10:46:39 IST" name="Test" finished-at="2023-07-14T10:48:24 IST" duration-ms="105163">
       <class name="com.geo.tests.MainPageTest">
-        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@35bfa1bb]" started-at="2023-07-13T14:47:59 IST" name="preBase" finished-at="2023-07-13T14:48:08 IST" duration-ms="9602" status="PASS">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:08 IST" name="preBase" finished-at="2023-07-14T10:47:14 IST" duration-ms="6766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preBase -->
-        <test-method signature="verifyingWithEnteringValidMobNoandOTP()[pri:8, instance:com.geo.tests.MainPageTest@35bfa1bb]" started-at="2023-07-13T14:48:09 IST" name="verifyingWithEnteringValidMobNoandOTP" description="Verifying Login with valid email id Test data" finished-at="2023-07-13T14:48:25 IST" duration-ms="16789" status="PASS">
+        <test-method signature="verifyngTitleOfThePage_TC_MP_001()[pri:1, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:14 IST" name="verifyngTitleOfThePage_TC_MP_001" description="Verifying title of the home page" finished-at="2023-07-14T10:47:15 IST" duration-ms="87" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Geoclean] but found [Geocycle]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Geoclean] but found [Geocycle]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.geo.tests.MainPageTest.verifyngTitleOfThePage_TC_MP_001(MainPageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyingWithEnteringValidMobNoandOTP -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@35bfa1bb]" started-at="2023-07-13T14:48:25 IST" name="tearDownTest" finished-at="2023-07-13T14:48:26 IST" duration-ms="320" status="PASS">
+        </test-method> <!-- verifyngTitleOfThePage_TC_MP_001 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:15 IST" name="tearDownTest" finished-at="2023-07-14T10:47:15 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.geo.tests.MainPageTest@35bfa1bb]" started-at="2023-07-13T14:48:26 IST" name="tearDown" finished-at="2023-07-13T14:48:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:15 IST" name="preBase" finished-at="2023-07-14T10:47:21 IST" duration-ms="5825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyUsernameMaxLength_TC_MP_002()[pri:2, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:21 IST" name="verifyUsernameMaxLength_TC_MP_002" description="Verifying length of the username input " finished-at="2023-07-14T10:47:25 IST" duration-ms="4432" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Username length exceeds maximum allowed length expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Username length exceeds maximum allowed length expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.geo.tests.MainPageTest.verifyUsernameMaxLength_TC_MP_002(MainPageTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsernameMaxLength_TC_MP_002 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:25 IST" name="tearDownTest" finished-at="2023-07-14T10:47:26 IST" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:26 IST" name="preBase" finished-at="2023-07-14T10:47:33 IST" duration-ms="6302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyingPlaceHolder_TC_MP_003()[pri:3, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:33 IST" name="verifyingPlaceHolder_TC_MP_003" description="Verifying title of the home page" finished-at="2023-07-14T10:47:33 IST" duration-ms="92" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Email / Mobile Number] but found [Enter Email / Mobile Number]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Email / Mobile Number] but found [Enter Email / Mobile Number]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.geo.tests.MainPageTest.verifyingPlaceHolder_TC_MP_003(MainPageTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingPlaceHolder_TC_MP_003 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:33 IST" name="tearDownTest" finished-at="2023-07-14T10:47:33 IST" duration-ms="566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:33 IST" name="preBase" finished-at="2023-07-14T10:47:39 IST" duration-ms="5585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyingWithEnteringInvalidEmailID_TC_MP_004()[pri:4, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:39 IST" name="verifyingWithEnteringInvalidEmailID_TC_MP_004" description="Verifying Login with entering invalid email ID" finished-at="2023-07-14T10:47:39 IST" duration-ms="363" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at com.geo.tests.MainPageTest.verifyingWithEnteringInvalidEmailID_TC_MP_004(MainPageTest.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingWithEnteringInvalidEmailID_TC_MP_004 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:39 IST" name="tearDownTest" finished-at="2023-07-14T10:47:40 IST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:40 IST" name="preBase" finished-at="2023-07-14T10:47:45 IST" duration-ms="5758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyingWithEnteringValidEmailID_TC_MP_005()[pri:5, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:45 IST" name="verifyingWithEnteringValidEmailID_TC_MP_005" description="VerifyingLogin with entering valid email ID" finished-at="2023-07-14T10:47:48 IST" duration-ms="2688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingWithEnteringValidEmailID_TC_MP_005 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:48 IST" name="tearDownTest" finished-at="2023-07-14T10:47:48 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:48 IST" name="preBase" finished-at="2023-07-14T10:47:54 IST" duration-ms="5753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyingWithEnteringInValidEmailIDData1_TC_MP_006()[pri:6, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:54 IST" name="verifyingWithEnteringInValidEmailIDData1_TC_MP_006" description="Verifying Login with Invalid email id Test data-1" finished-at="2023-07-14T10:47:55 IST" duration-ms="344" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at com.geo.tests.MainPageTest.verifyingWithEnteringInValidEmailIDData1_TC_MP_006(MainPageTest.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingWithEnteringInValidEmailIDData1_TC_MP_006 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:55 IST" name="tearDownTest" finished-at="2023-07-14T10:47:55 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:47:55 IST" name="preBase" finished-at="2023-07-14T10:48:01 IST" duration-ms="5795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyingWithEnteringInValidEmailIDData2_TC_MP_007()[pri:7, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:48:01 IST" name="verifyingWithEnteringInValidEmailIDData2_TC_MP_007" description="Verifying Login with Invalid email id Test data-2" finished-at="2023-07-14T10:48:01 IST" duration-ms="379" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at com.geo.tests.MainPageTest.verifyingWithEnteringInValidEmailIDData2_TC_MP_007(MainPageTest.java:130)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingWithEnteringInValidEmailIDData2_TC_MP_007 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:48:01 IST" name="tearDownTest" finished-at="2023-07-14T10:48:01 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:48:01 IST" name="preBase" finished-at="2023-07-14T10:48:07 IST" duration-ms="5820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="verifyingWithEnteringValidMobNoandOTP()[pri:8, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:48:08 IST" name="verifyingWithEnteringValidMobNoandOTP" description="Verifying Login with valid email id Test data" finished-at="2023-07-14T10:48:24 IST" duration-ms="16647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingWithEnteringValidMobNoandOTP -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.geo.tests.MainPageTest@7d0100ea]" started-at="2023-07-14T10:48:24 IST" name="tearDownTest" finished-at="2023-07-14T10:48:24 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.geo.tests.MainPageTest -->
+      <class name="com.geo.tests.DashBoardPageTest">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.geo.tests.DashBoardPageTest@5d7911d5]" started-at="2023-07-14T10:46:39 IST" name="preBase" finished-at="2023-07-14T10:47:07 IST" duration-ms="27904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="enterValidMobNoandInvalidOTP()[pri:0, instance:com.geo.tests.DashBoardPageTest@5d7911d5]" started-at="2023-07-14T10:47:07 IST" name="enterValidMobNoandInvalidOTP" finished-at="2023-07-14T10:47:08 IST" duration-ms="168" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Geoclean] but found [Geocycle]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Geoclean] but found [Geocycle]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.geo.tests.DashBoardPageTest.enterValidMobNoandInvalidOTP(DashBoardPageTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidMobNoandInvalidOTP -->
+      </class> <!-- com.geo.tests.DashBoardPageTest -->
+      <class name="com.adc.base.TestBase">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.adc.base.TestBase@5382184b]" started-at="2023-07-14T10:48:24 IST" name="tearDown" finished-at="2023-07-14T10:48:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.geo.tests.MainPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.adc.base.TestBase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
